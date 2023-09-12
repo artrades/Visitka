@@ -47,21 +47,7 @@
                   <div class="modal" id="myModal">
                     <div class="modal_content" id="cont">
                       <div class="close" id="myClose">&times;</div>
-                      <div class="send_wrapper">
-                        <h1 class="modal_title">Хотите веб-сайт?</h1>
-                        <form method="post" action="zaglushka.php">
-                          <div class="send_form">
-                            <div>
-                              <input type="text" class="form1 formstyle" placeholder="Ваше имя" name="User_name">
-                              <input type="email" class="form2 formstyle" placeholder="Ваше e-mail" name="User_email">
-                            </div>
-                            <div>
-                              <textarea class="form3 formstyle" cols="30" rows="10" placeholder="Сообщение" name="User_message"></textarea>
-                            </div>
-                            <button class="send_button">ОТПРАВИТЬ</button>
-                          </div>
-                        </form>
-                      </div>
+                      <?php include "feedbackform.php" ?>
                     </div>
                   </div>
               </div>
@@ -108,13 +94,8 @@
             <a name = "skills"></a>
               <div class="wrapper">
                 <div class="skills_wrapper">
-                  <div class="skills_left">
-                      <h3 class="skills_title">
-                        Мои навыки
-                      </h3>
-                      <h4 class="skill skill1">VS Code</h4>
-                      <h4 class="skill skill2">Gimp</h4>
-                      <h4 class="skill skill3">Figma</h4>
+                <div class="skills_left">
+                      <img src="img/skills.png" alt="Photo" class="skills_img">
                   </div>
                   <div class="skills_right">
                       <img src="img/my_photo.svg" alt="Photo" class="skills_img">
@@ -183,28 +164,8 @@
 
           <section class="send">
             <a name = "send"></a>
-            <div class="wrapper">
-              <div class="send_wrapper">
-                <h1 class="send_title">Хотите веб-сайт?</h1>
-                <p class="send_text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                  Repellendus expedita necessitatibus commodi iure amet culpa earum, 
-                  veniam quam qui laudantium repellat dolor numquam, optio nihil maiores! 
-                  Harum vero accusamus doloremque?
-                </p>
-                <form method="post" action="zaglushka.php">
-                  <div class="send_form">
-                    <div>
-                      <input type="text" class="form1 formstyle" placeholder="Ваше имя" name="User_name">
-                      <input type="email" class="form2 formstyle" placeholder="Ваше e-mail" name="User_email">
-                    </div>
-                    <div>
-                      <textarea class="form3 formstyle" cols="30" rows="10" placeholder="Сообщение" name="User_message"></textarea>
-                    </div>
-                    <button class="send_button">ОТПРАВИТЬ</button>
-                  </div>
-                </form>
-              </div>
+            <div class="wrapper">             
+              <?php include "feedbackform.php" ?>
             </div>
           </section>
 
